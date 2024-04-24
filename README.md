@@ -23,8 +23,6 @@ Publish Date: 24/04/2024
 ---
 
 <p align="center">
-  <img src="https://ibb.co/c1Tk240"/>
-  <img src="https://ibb.co/gT1WDrk"/>
-  ![screenshot](images/sent.png)
-  <img src="images/sent.png" width="128"/>
+  <img src="images/sent.png"/>
+  <img src="images/image.png"/>
 </p>
