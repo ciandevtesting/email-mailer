@@ -28,6 +28,8 @@ class Sender:
             "email_address": self.recieverEmail
         }
 
+        r = requests.get(url, json=payload).json() # Use TLS-Client in the future, add headers
+        
     
     def sendMail(self):
         if self.config['html']:
