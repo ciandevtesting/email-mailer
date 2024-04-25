@@ -1,5 +1,6 @@
 import json
 import smtplib
+import requests
 
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -16,6 +17,10 @@ class Sender:
         self.server.login(senderEmail, self.config['googlepassword'])
 
         self.text = f"Subject: {self.config['subject']}\n\n{self.config['message']}"
+
+    def checkMail(self):
+        # TODO - Add email checker either regex or api
+        url = f"https://mailboxlayer.com/php_helper_scripts/email_api_n.php?secret_key=c6577b03c6a6b359989837aed53d5d5d&email_address=ifeoki%40gmail.com"
 
     def sendMail(self):
         if self.config['html']:
