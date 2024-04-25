@@ -4,7 +4,7 @@ Publish Date: 24/04/2024
 
 ---
 
-### ⚙️ Useage
+### ⚙️ Usage
 
 - Requires: `Python 3.10+`
 - Configure: `Config.json`
