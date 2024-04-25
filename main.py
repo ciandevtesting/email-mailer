@@ -21,7 +21,7 @@ class Sender:
     def checkMail(self):
         # TODO - Add email checker either regex or api
         # May have to rotate secret key to prevent timeouts
-        url = f"https://mailboxlayer.com/php_helper_scripts/email_api_n.php?secret_key={self.config['']}&email_address=ifeoki%40gmail.com"
+        url = f"https://mailboxlayer.com/php_helper_scripts/email_api_n.php?secret_key={self.config['mailboxlayersk']}&email_address={self.recieverEmail}"
 
     def sendMail(self):
         if self.config['html']:
