@@ -23,6 +23,12 @@ class Sender:
         # May have to rotate secret key to prevent timeouts
         url = f"https://mailboxlayer.com/php_helper_scripts/email_api_n.php?secret_key={self.config['mailboxlayersk']}&email_address={self.recieverEmail}"
 
+        payload = {
+            "secret_key": self.config['mailboxlayersk'],
+            "email_address": self.recieverEmail
+        }
+
+    
     def sendMail(self):
         if self.config['html']:
             plain = MIMEText(self.text, 'plain')
