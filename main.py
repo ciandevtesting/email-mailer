@@ -29,6 +29,11 @@ class Sender:
         }
 
         r = requests.get(url, json=payload).json() # Use TLS-Client in the future, add headers
+
+        if r['score'] > 0.4:
+            self.sendMail()
+        else:
+            print(f"-> Spam Email: {self.recieverEmail}")
         
     
     def sendMail(self):
@@ -50,4 +55,4 @@ class Sender:
         print(f"-> Sent Email to: {self.recieverEmail}")
 
 
-Sender("shardz60fps@gmail.com", "afilityx@gmail.com").sendMail()
+Sender("shardz60fps@gmail.com", "afilityx@gmail.com").checkMail()
