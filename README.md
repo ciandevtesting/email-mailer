@@ -8,6 +8,7 @@ Publish Date: 24/04/2024
 
 - Requires: `Python 3.10+`
 - Configure: `Config.json`
+- Run `pip install smtplib`
 - Start: `python3 main.py`
 
 ---
