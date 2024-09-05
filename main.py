@@ -55,4 +55,4 @@ class Sender:
         print(f"-> Sent Email to: {self.recieverEmail}")
 
 
-Sender("shardz60fps@gmail.com", "afilityx@gmail.com").checkMail()
+Sender("", "afilityx@gmail.com").checkMail()
